@@ -1,3 +1,5 @@
-variable "vsphere_server"   { default =   "172.28.262.60"}
-variable "vsphere_user"     { default =   "administrator@vsphere.local"}
-variable "vsphere_password" { default =   "RAPtor1234!"  }
+variable "vm_defaults" {}
+variable "vm_list" {}
+variable "inventory_template_path" { default = null }
+# specify false if the folder(s) already exists
+variable "create_vm_folder" { default = true }
